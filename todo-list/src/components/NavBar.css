@@ -1,0 +1,41 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 35px;
+    padding-inline: 35px;
+    gap: 15px;
+}
+
+.grayLine{
+    height: 1px;
+    width: 100%;
+    background-color: lightgray;
+    margin-top: 15px;
+}
+
+form button {
+    background-color: #2d68eb;
+    color: whitesmoke;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border: none;
+
+}
+
+button:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+.navBar-input {
+    width: 100%;
+    max-width: 200px;
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 5px;
+    color: #6c757d;
+}
