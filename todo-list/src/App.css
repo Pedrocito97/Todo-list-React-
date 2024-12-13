@@ -1,0 +1,22 @@
+#root {
+
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.app{
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 ;
+}
+.title-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color : whitesmoke;
+}
+.title-container h1 {
+  padding: 0 20px;
+}

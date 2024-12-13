@@ -1,0 +1,17 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "- Repository: `react-intro`\r - Mode: `solo`\r - Type of Challenge: `learning`\r - Duration: `4 days`\r - Deployment: `Netlify`",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.0.3"
+  }
+}

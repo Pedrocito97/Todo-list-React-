@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Todos.css";
 
 
-function Todos({ todos, onToggleTodo, onDeleteTodo }) {
+function Todos({ todos, onToggleTodo, onDeleteTodo, onCountingTodo, onDeleteAllTasks }) {
     return (
         <div>
             <ul>
@@ -25,14 +25,30 @@ function Todos({ todos, onToggleTodo, onDeleteTodo }) {
                         <button
                             className="deleteButton"
                             onClick={() => onDeleteTodo(index)}
-                            onMouseOver={(e) => e.target.style.backgroundColor = 'darkred'}
-                            onMouseOut={(e) => e.target.style.backgroundColor = 'red'}
+                            onMouseOver={(e) => e.target.style.backgroundColor = "lightGrey"}
+                            onMouseOut={(e) => e.target.style.backgroundColor = "darkGrey"}
                         >
-                            delete
+                            X
                         </button>
                     </li>
                 ))}
             </ul>
+            {todos.length > 1 && (
+                <button
+                    className="deleteAllButton"
+                    onClick={() => onDeleteAllTasks()}
+                    onMouseOver={(e) => e.target.style.backgroundColor = 'darkred'}
+                    onMouseOut={(e) => {
+                        e.target.style.backgroundColor = 'red'
+                    }}
+                >
+                    delete all
+                </button>
+            )}
+            {todos.length > 0 && (
+                <p>tasks left : {onCountingTodo}</p>
+            )}
+
         </div>
     );
 }
